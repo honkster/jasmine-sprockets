@@ -5,8 +5,8 @@ require "jasmine-sprockets/version"
 Gem::Specification.new do |s|
   s.name        = "jasmine-sprockets"
   s.version     = Jasmine::Sprockets::VERSION
-  s.authors     = ["Scott Gonyea"]
-  s.email       = ["sgonyea@truecar.com"]
+  s.authors     = ["Scott Gonyea", "Honkster"]
+  s.email       = ["sgonyea@truecar.com", "honk-dev@googlegroups.com"]
   s.homepage    = ""
   s.summary     = %q{Adds Sprockets to Jasmine's Asset Serving}
 
@@ -15,7 +15,7 @@ Gem::Specification.new do |s|
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
 
-  s.add_runtime_dependency "jasmine",   '~>1.1.2'
-  s.add_runtime_dependency "sprockets", '~>2.0.0'
+  s.add_runtime_dependency "jasmine",   '~>1.2.1'
+  s.add_runtime_dependency "sprockets", '~>2.6.0'
   s.add_runtime_dependency "rack"
 end
